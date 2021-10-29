@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <fieldset>
+        <legend>Dados para login</legend>
+        <label for="forEmail">E-mail</label>
+        <input name="email" type="email" id="forEmail" autocomplete="email" required>
+        <label for="forPass" >Senha</label>
+        <input name="password" type="password" id="forPass" required>
+      </fieldset>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="forNome">Nome</label>
+        <input name="name" type="text" id="forNome" required>
+        <label for="forSobreNome" >Sobrenome</label>
+        <input name="sobrenome" type="text" id="forSobreNome" required>
+        <div class="flex">
+          <div>
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+          </div>
+                
+          <div>
+            <input type="radio" id="feminino" name="sexo">
+            <label for="feminino">Feminino</label>
+          </div>
+                
+          <div>
+            <input type="radio" id="outros" name="sexo">
+            <label for="outros">Outros</label>
+          </div>
+        </div>
+        <label for="forCpf" >CPF</label>
+        <input name="cpf" type="text" id="forCpf" placeholder="Ex.: xxxxxxxxxxx" required>
+        <small>*somente números.</small>
+        <label for="forTelefone" >Telefone</label>
+        <input name="telefone" type="tel" id="forTelefone" placeholder="Ex.: (xx) xxxx-xxxx" required>
+        <label for="forNascimento" >Nascimento</label>
+        <input name="dataNascimento" type="date" id="forNascimento" required>
+      </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="forCep" >Cep</label>
+        <input name="cep" type="text" id="forCep" placeholder="Ex.: xxxxx-xxx" required>
+
+        <label for="forRua" >Rua</label>
+        <input name="rua" type="text" id="forRua" placeholder="Ex.: R. Luiz Carlos Prestes" required>
+
+        <label for="forNumero" >Número</label>
+        <input name="numero" type="number" id="forNumero" placeholder="Ex: xxxx" required>
+
+        <label for="forBairro">Bairro</label>
+        <input name="bairro" type="text" id="forBairro" placeholder="Ex.: Vila Madalena" required>
+
+        <label for="forCidade">Cidade</label>
+        <input name="cidade" type="text" id="forCidade" placeholder="Ex.: São Paulo" required>
+
+        <label for="forEstado">Estado</label>
+        <select id="forEstado" name="estado">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+      </select>
+        
+      </fieldset>
+      <div class="btn-box" >
+        <button class="btn primary" type="submit">Cadastrar</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

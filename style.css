@@ -1,0 +1,133 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #1b1d20;
+  padding: 0 20px;
+}
+/* ====== RESET ====== */
+
+/* ====== FORM ====== */
+form {
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  background: #010101;
+  border: 2px solid #10a328;
+  box-shadow: 0px 0px 5px 5px #0c771e67;
+}
+/* ====== FORM ====== */
+
+/* ====== GERAL ====== */
+small {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: #16c53467;
+}
+.btn-box {
+  padding: 10px 20px;
+}
+.btn {
+  width: 150px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 3px;
+  transition: all .3s ease;
+  letter-spacing: 2px;
+}
+.primary {
+  background: #19ca72;
+  border: 2px solid #000;
+  color: #1b1d20;
+}
+.primary:hover {
+  background: #f4f4f4;
+  border: 2px solid #000;
+  color: #000;
+}
+legend {
+  font-size: 24px;
+  color: #19ca72;
+  padding: 0 10px;
+  text-align: center;
+  font-weight: 600;
+}
+label {
+  display: block;
+  color: #f4f4f4;
+  margin: 5px 0;
+  font-size: 20px;
+}
+fieldset {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  border: 0;
+}
+fieldset + fieldset {
+  margin-top: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.flex div{
+  display: flex;
+}
+.flex div label{
+  margin-left: 5px;
+}
+input[type='radio'] {
+  width: 18px;
+  height: 18px;
+}
+input:not([type=date]) {
+  color: #10a328;
+}
+input,select{
+  font-size: 18px;
+  margin:5px 0px 20px 0px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 2px solid #000;
+  background: #1b1d20;
+  transition: all .3s ease;
+  outline: none;
+  color: #10a328;
+}
+select > option {
+  font-size: 19px;
+}
+select > option:nth-child(even) {
+  background: #000;
+  color: #f4f4f4;
+}
+select > option:nth-child(odd) {
+  background: #1b1d20;
+  color: #b8b8b8;
+}
+input:hover {
+  border: 2px solid #f4f4f4;
+}
+input:focus {
+  border: 2px solid #10a328;
+  transition: all .3s ease;
+  background: #f4f4f4;
+  color: #1b1d20;
+}
+/* ====== GERAL ====== */
+
+@media (max-width:440px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
